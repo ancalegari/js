@@ -9,8 +9,8 @@ function limpar(){
     .forEach(span => span.innerText = "")
 }
  function salvar(tarefa){
-    const tarefas = []
+    const tarefas = JSON.parse(localStorage.getItem("tarefas"))
     tarefas.push(tarefa)
-    localStorage.setItem("tarefas", tarefas)
+    localStorage.setItem("tarefas",JSON.stringfy(tarefas))
    
  }
