@@ -7,5 +7,10 @@ function limpar(){
 
   document.querySelectorAll("nes-field span")
     .forEach(span => span.innerText = "")
-
 }
+ function salvar(tarefa){
+    const tarefas = []
+    tarefas.push(tarefa)
+    localStorage.setItem("tarefas", tarefas)
+   
+ }
